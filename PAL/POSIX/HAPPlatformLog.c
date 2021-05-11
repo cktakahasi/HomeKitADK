@@ -4,6 +4,9 @@
 // you may not use this file except in compliance with the License.
 // See [CONTRIBUTORS.md] for the list of HomeKit ADK project authors.
 
+/* Forcing locally XSI-Compliant strerror_r */
+#define _POSIX_C_SOURCE	200112L
+
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
