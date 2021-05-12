@@ -63,7 +63,7 @@ typedef struct {
 struct HAPPlatformServiceDiscovery {
     // Opaque type. Do not access the instance fields directly.
     /**@cond */
-    char interfaceName[IFNAMSIZ];
+    char interfaceName[IF_NAMESIZE];
 
     DNSServiceRef dnsService;
     TXTRecordRef txtRecord;
