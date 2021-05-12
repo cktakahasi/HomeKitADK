@@ -4,6 +4,10 @@
 // you may not use this file except in compliance with the License.
 // See [CONTRIBUTORS.md] for the list of HomeKit ADK project authors.
 
+/* usleep is deprecated */
+#define _XOPEN_SOURCE   600
+#define _POSIX_C_SOURCE 200112L
+
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
