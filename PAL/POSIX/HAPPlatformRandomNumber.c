@@ -4,6 +4,7 @@
 // you may not use this file except in compliance with the License.
 // See [CONTRIBUTORS.md] for the list of HomeKit ADK project authors.
 
+#define _GNU_SOURCE
 #include <errno.h>
 #include <linux/random.h>
 #include <syscall.h>
