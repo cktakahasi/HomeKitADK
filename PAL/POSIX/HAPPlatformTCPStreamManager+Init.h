@@ -111,7 +111,7 @@ struct HAPPlatformTCPStreamManager {
     size_t maxTCPStreams;
 
     struct {
-        char interfaceName[IFNAMSIZ];
+        char interfaceName[IF_NAMESIZE];
         HAPNetworkPort port;
     } tcpStreamListenerConfiguration;
 
