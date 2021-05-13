@@ -1,5 +1,5 @@
 
-CC := clang
+CC ?= clang
 AR := ar
 COMPILER := $(shell $(CC) --version | grep "Target:" | cut -d ' ' -f 2)
 DEBUGGER := gdb
