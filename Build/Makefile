@@ -47,8 +47,8 @@ MBEDTLS_PATH = $(firstword $(wildcard /usr/include/mbedtls) $(wildcard /usr/loca
 
 -include Build/Makefile.$(PAL)
 
-CFLAGS_OpenSSL := -I$(OPENSSL_PATH)/include
-LDFLAGS_OpenSSL := -L$(OPENSSL_PATH)/lib -lcrypto
+CFLAGS_OpenSSL ?= -I$(OPENSSL_PATH)/include
+LDFLAGS_OpenSSL ?= -L$(OPENSSL_PATH)/lib -lcrypto
 
 CFLAGS_MbedTLS := -I$(MBEDTLS_PATH)/include
 LDFLAGS_MbedTLS := -L$(MBEDTLS_PATH)/lib -lmbedcrypto

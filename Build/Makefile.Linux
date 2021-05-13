@@ -7,6 +7,9 @@ DEBUGGER := gdb
 SRC_DIRS_Linux := PAL/Linux
 CRYPTO_Linux := PAL/Crypto/OpenSSL
 
+CFLAGS_OpenSSL := $(shell pkg-config --cflags openssl)
+LDFLAGS_OpenSSL := $(shell pkg-config --libs openssl)
+
 CFLAGS_Linux := $(CFLAGS_IP) -ffunction-sections -fdata-sections
 LDFLAGS_Linux := -ldns_sd -pthread -lm
 ifeq ($(BUILD_TYPE),Release)
