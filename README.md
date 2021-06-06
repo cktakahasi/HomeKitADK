@@ -1,4 +1,4 @@
-# HomeKit Accessory Development Kit (ADK)
+foo# HomeKit Accessory Development Kit (ADK)
 
 The HomeKit ADK is used by silicon vendors and accessory manufacturers to build HomeKit compatible devices.
 
